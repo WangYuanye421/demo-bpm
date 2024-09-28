@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo-flowable?useSSL=false&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+    username: root
+    password: rootroot
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: demo-flowable
+  jpa:
+    show-sql: true
+  liquibase:
+    enabled: false
+
+
+# pw: 127e3107-dd0c-44fe-a0a8-1962bf272e09
+flowable:
+  async-executor-activate: false
+  database-schema-update: true
+
+server:
+  port: 8081
+
+
+logging:
+  level:
+    org.flowable: DEBUG
